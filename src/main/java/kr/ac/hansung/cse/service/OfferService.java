@@ -15,10 +15,12 @@ public class OfferService {
     private OfferDao offerDao;
 
     public List<Offer> getAllOffers() {
+
         return offerDao.getOffers();
     }
 
     public void insert(Offer offer) {
+
         offerDao.insert(offer);
     }
 }
